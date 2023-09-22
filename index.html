@@ -121,36 +121,53 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
-        <h2 class="">Заинтересовались?</h2>
+      <section class="search-hotel">
+        <h2 class="search-title">Заинтересовались?</h2>
         <p class="">Укажите предполагаемые даты поездки,и
           мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="search-button" href="">
-          <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-        </a>
+        <a class="button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
     </main>
+    <!-- (Подписка на рассылку относится к main , footer, или отдельная секция?) -->
+    <section class="newsletter">
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <input class="field-email" type="email" name="email" id="newsletter-email" placeholder="Ваш e-mail" required>
+        <!-- <input class="input-submit" type="submit" value="Подписаться"> -->
+        <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
+      </form>
+    </section>
     <footer class="page-footer">
-      <section class="link-list">
+      <section class="footer-social-list">
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-          <li class="link-item">
-            <a class="icon-vk" href="#" > <img src="#"alt="Вконтакте"></a>
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy"> <img src="" alt="Вконтакте">
+              <!-- <span class="visually-hidden">Вконтакте</span> -->
+            </a>
           </li>
-          <li class="link-item">
-            <a class="icon-telegram" href="#" > <img src="#"alt="Телеграм"></a>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy"> <img src="#" alt="Телеграм">
+             <!-- <span class="visually-hidden">Телеграм</span> -->
+            </a>
           </li>
-          <li class="link-item">
-            <a class="icon-you-tube" href="#" > <img src="#"alt="You-Tube"></a>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru"> <img src="#" alt="You-Tube">
+              <!-- <span class="visually-hidden">You-Tube</span> -->
+            </a>
           </li>
          </ul>
       </section>
       <section class="contact-phone">
+        <h2 class="visually-hidden"> Контакы</h2>
         <a class="phone_number" href="tel:+78128121212"> +7 (812) 812-12-12</a>
       </section>
-      <section class="link-academy">
-        <a class="logo-htmlacademy" href="#"> <img src="#" alt=" Ссылка логотип на HTML-academy"></a>
-      </section>
+      <p class="link-academy">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"> <img src="#" alt="HTML-academy"></a>
+      </p>
     </footer>
   </body>
 </html>
