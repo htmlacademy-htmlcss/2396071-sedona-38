@@ -61,19 +61,19 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="Бассейн" checked>
+                                    <input class="control-input" type="checkbox" name="Pool" value="Pool" checked>
                                     Бассейн
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="Парковка" checked>
+                                    <input class="control-input" type="checkbox" name="Parking" value="Parking" checked>
                                     Парковка
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="Wi-Fi">
+                                    <input class="control-input" type="checkbox" name="Wi-Fi" value="Wi-Fi">
                                     Wi-Fi
                                 </label>
                             </li>
@@ -105,7 +105,7 @@
                 </fieldset>
                 <button class="button" type="submit">ПРИМЕНИТЬ</button>
             </form>
-            <select class="select-control" arial-lable="Сортировка">
+            <select class="select-control" arial-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="cheap">Сначала дорогие</option>
                 <option value="cheap">Сначала популярные</option>
@@ -125,12 +125,15 @@
                         <img class="hotel-card-image" src="#" alt="#">
                         <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                     </a>
-                    <!-- Можно ли спан вложить в b   -->
                     <span class="hotel-card-price">Гостиница</span>
-                    <b class="hotel-card-price">  От 4000 P</b>
-                    <div>
+                    <b class="hotel-card-price">  От 4000 &#8381</b>
+                    <div class="card-button">
                         <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
                         <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
+                    </div>
+                    <div class="rating">
+                        <img class="rating-star" src="#" alt="star">
+                        <span class="rating-point"> РЕЙТИНГ:8,5</span>
                     </div>
                 </li>
                 <li class="hotel-card-item">
@@ -138,12 +141,15 @@
                         <img class="hotel-card-image" src="#" alt="#">
                         <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                     </a>
-                    <!-- Можно ли спан вложить в b   -->
                     <span class="hotel-card-price">Гостиница</span>
-                    <b class="hotel-card-price">  От 5000 P</b>
-                    <div>
+                    <b class="hotel-card-price">  От 5000 &#8381</b>
+                    <div class="card-button">
                         <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
                         <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
+                    </div>
+                    <div class="rating">
+                        <img class="rating-star" src="#" alt="star">
+                        <span class="rating-point"> РЕЙТИНГ:9,2</span>
                     </div>
                 </li>
                 <li class="hotel-card-item">
@@ -151,12 +157,15 @@
                         <img class="hotel-card-image" src="#" alt="#">
                         <h3 class="hotel-card-title">Desert Quail Inn</h3>
                     </a>
-                    <!-- Можно ли спан вложить в b   -->
                     <span class="hotel-card-price">Гостиница</span>
-                    <b class="hotel-card-price">  От 2500 P</b>
-                    <div>
+                    <b class="hotel-card-price">  От 2500 &#8381</b>
+                    <div class="card-button">
                         <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
                         <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
+                    </div>
+                    <div class="rating">
+                        <img class="rating-star" src="#" alt="star">
+                        <span class="rating-point"> РЕЙТИНГ:6,9</span>
                     </div>
                 </li>
                 <li class="hotel-card-item">
@@ -164,12 +173,15 @@
                         <img class="hotel-card-image" src="#" alt="#">
                         <h3 class="hotel-card-title">GreenTree Inn</h3>
                     </a>
-                    <!-- Можно ли спан вложить в b   -->
                     <span class="hotel-card-price">Гостиница</span>
-                    <b class="hotel-card-price">  От 1500 P</b>
-                    <div>
+                    <b class="hotel-card-price">  От 1500 &#8381</b>
+                    <div class="card-button">
                         <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
                         <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
+                    </div>
+                    <div class="rating">
+                        <img class="rating-star" src="#" alt="star">
+                        <span class="rating-point"> РЕЙТИНГ:5,0</span>
                     </div>
                 </li>
             </ul>
@@ -195,18 +207,17 @@
                 </li>
             </ul>
         </section>
+        <section class="newsletter">
+            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+            <p class="newsletter-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field-email" type="email" name="email" id="newsletter-email" placeholder="Ваш e-mail" required>
+                <!-- <input class="input-submit" type="submit" value="Подписаться"> -->
+                <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
+            </form>
+        </section>
     </main>
-          <!-- (Подписка на рассылку относится к main , footer, или отдельная секция?) -->
-    <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field-email" type="email" name="email" id="newsletter-email" placeholder="Ваш e-mail" required>
-            <!-- <input class="input-submit" type="submit" value="Подписаться"> -->
-            <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
-        </form>
-    </section>
       <footer class="page-footer">
         <section class="footer-social-list">
           <h2 class="visually-hidden">Социальные сети</h2>
