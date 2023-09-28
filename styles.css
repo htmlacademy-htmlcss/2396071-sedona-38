@@ -1,0 +1,27 @@
+.background-sedona
+{
+  background-image: url("../2396071-sedona-38/images/background-sedona.jpg");
+  width: 1200px;
+  height: 485px;
+}
+
+.сity-name {
+  padding-top: 51px;
+  padding-left: 371px;
+}
+
+.newsletter {
+  background-image: url("../2396071-sedona-38/images/subscribe.jpg");
+  width: 1200px;
+  height: 414.86px;
+}
+
+.inner-header {
+  background-color: aqua;
+}
+
+/* .inner-backgound {
+  background-image: url(../2396071-sedona-38/images/inner-header-background.jpg);
+  width: 1200px;
+  height: 412px;
+} */
