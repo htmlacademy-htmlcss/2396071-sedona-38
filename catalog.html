@@ -11,37 +11,40 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/header-icon/logo.svg" width="140" height="70" alt="Логотип города Седона">
+          <img class="page-header-logo" src="images/header-icon/logo.svg" width="140" height="70." alt="Логотип города Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
-          <!-- Как разметить знач стрелки между двумя ссылками? -->
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img src="images/header-icon/search.svg" width="20" height="20" alt="Поиск">
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img src="images/header-icon/basket.svg" width="44" height="64" alt="Корзина">
-          </a>
-        </li>
-        <li class="navigation-item">
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <img src="images/header-icon/search.svg" width="20" height="20" alt="Поиск">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <span class="basket-12">12</span>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <img src="images/header-icon/basket.svg" width="18" height="17" alt="Корзина">
+            </a>
+          </li>
+          <li class="navigation-item">
             <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+     <main class="main-inner">
       <div class="inner-background">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -109,30 +112,34 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">ПРИМЕНИТЬ</button>
-            <button class="button-reset" type="reset">СБРОСИТЬ</button>
+            <button class="button button-apply" type="submit">ПРИМЕНИТЬ</button>
+            <button class="button button-reset" type="reset">СБРОСИТЬ</button>
           </form>
         </section>
       </div>
       <section>
-        <h3>НАЙДЕНО ГОСТИНИЦ: 38</h3>
-        <select class="select-control" arial-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="cheap">Сначала дорогие</option>
-          <option value="cheap">Сначала популярные</option>
-        </select>
-        <a href="#" class="button button-light">
-          <img src="images/view-1.svg" width="16" height="14" alt="#">
-          <span class="visually-hidden">Показать гостиницы</span>
-        </a>
-        <a href="#" class="button button-light">
-          <img src="images/view-2.svg" width="16" height="14" alt="#">
-          <span class="visually-hidden">Показать гостиницу</span>
-        </a>
-        <a href="#" class="button button-light">
-          <img src="images/view-3.svg" width="16" height="14" alt="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="hotel=show">
+          <h3 class="hotel-found">НАЙДЕНО ГОСТИНИЦ: 38</h3>
+          <select class="select-control" arial-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="cheap">Сначала дорогие</option>
+            <option value="cheap">Сначала популярные</option>
+          </select>
+          <div class="view-button">
+            <a href="#" class="button button-light">
+              <img src="images/view-1.svg" width="16" height="14" alt="#">
+              <span class="visually-hidden">Показать гостиницы</span>
+            </a>
+            <a href="#" class="button button-light">
+              <img src="images/view-2.svg" width="16" height="14" alt="#">
+              <span class="visually-hidden">Показать гостиницу</span>
+            </a>
+            <a href="#" class="button button-light">
+              <img src="images/view-3.svg" width="16" height="14" alt="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
+        </div>
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="hotel.html">
@@ -140,7 +147,7 @@
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="hotel-card-price">Гостиница</span>
-            <b class="hotel-card-price">  От 4000 &#8381</b>
+            <span class="hotel-price">  От 4000 &#8381</span>
             <div class="card-button">
               <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
               <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
@@ -156,7 +163,7 @@
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="hotel-card-price">Гостиница</span>
-            <b class="hotel-card-price">  От 5000 &#8381</b>
+            <span class="hotel-price">  От 5000 &#8381</span>
             <div class="card-button">
               <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
               <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
@@ -172,7 +179,7 @@
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <span class="hotel-card-price">Гостиница</span>
-            <b class="hotel-card-price">  От 2500 &#8381</b>
+            <span class="hotel-price">  От 2500 &#8381</span>
             <div class="card-button">
               <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
               <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>
@@ -188,7 +195,7 @@
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <span class="hotel-card-price">Гостиница</span>
-            <b class="hotel-card-price">  От 1500 &#8381</b>
+            <span class="hotel-price">  От 1500 &#8381</span>
             <div class="card-button">
               <a class="hotel-card-button button" href="#">ПОДРОБНЕЕ</a>
               <a class="hotel-card-button button" href="#">В ИЗБРАННОЕ</a>

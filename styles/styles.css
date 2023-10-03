@@ -22,7 +22,22 @@ body {
   background: rgba(255, 255, 255, 1);
 }
 
+
 /* Pages */
+
+.basket-12 {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  padding-right: 5px;
+  color:rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  background-color: rgba(125, 181, 79, 1);
+}
 
 /* Можно ли так убрать стилизацию списка через тег? */
 li {
@@ -209,13 +224,16 @@ li:nth-child(5) .advantage-description {
 
 
 /* Newsletter */
+
 .newsletter {
+  text-align: center;
   background-image: url("../images/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
   height: 415px;
 }
+
 .newsletter-title {
   text-align: center;
   color: rgba(255, 255, 255, 1);
@@ -233,20 +251,231 @@ li:nth-child(5) .advantage-description {
   line-height: 26px;
 }
 
-.newsletter-form {
+.field-email {
+  text-align: left;
+  width: 412px;
+  height: 28px;
+  padding: 12px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  line-height: 24px;
+  border-color: transparent ;
+  outline: none;
+
+}
+ /* Не могу разобраться в стилизации кнопки ПОДПИСАТЬСЯю не срабатывают паддинги, высота и ширина */
+.newsletter-button {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
+  padding: 8px 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  width: 232px;
+  height: 36px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-color: transparent ;
+}
+
+
+/* Footer */
+ /* Опять не отрабатывают внутренние отступы на иконках соц сетей */
+.footer-social-item {
+  padding-right:10px;
+}
+
+.phone_number {
   text-align: center;
+  color: rgba(0, 0, 0, 1);
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-decoration: none;
+}
 
+/* Каталог */
+
+.inner-background {
+  background-image: url(../images/inner-header-background.jpg);
+  /* width: 1200px;
+  height: 412px; */
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 24px;
+}
+
+.catalog-filter-group {
+  border-color: transparent;
+}
+
+.catalog-filter-list {
+color: rgba(255, 255, 255, 1);
+text-align: left;
+font-size: 18px;
+font-weight: 400;
+line-height: 23px;
+}
+
+.button-apply
+ {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: rgba(130, 179, 211, 1);
+  border-color: transparent;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
+.button-reset {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 8px 50px;
+
+}
+
+.hotel-found {
+  font-size: 30px;
+  font-family: PT Sans;
+  text-transform: uppercase;
+  line-height: 36px;
+}
+
+/* Почему бордер исчезает емли задавать пиксели? */
+.select-control {
+  color: rgba(51, 51, 51, 1);
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 18px;
+  padding: 14px 20px;
+  border-color:rgba(229, 229, 229, 1);
+  border-radius: 4px;
+}
+
+.button-light {
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+/* Поиск гостиниц */
+
+.hotel-card-list a{
+text-decoration: none;
+}
+
+.hotel-card-title {
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.hotel-card-price,
+.hotel-price {
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.card-button a:nth-child(2) {
+  background-color: rgba(130, 179, 211, 1);
+}
+
+
+.hotel-card-button {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(117, 97, 87, 1);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 8px 50px;
+  margin: 10px;
+  border-radius: 4px;
+
+
+}
+
+.rating-star {
+  margin: 10px;
+}
+
+.rating-point{
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+.hotel-card-image {
+  padding-left: 20px 20px 16px 20px;
 }
 
 
 
+/* Пагинация */
 
-.inner-header {
-  background-color: aqua;
+.pagination a {
+  text-decoration: none;
 }
 
-/* .inner-background {
-  background-image: url(../2396071-sedona-38/images/inner-header-background.jpg);
-  width: 1200px;
-  height: 412px;
-} */
+.pagination-item {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 11px;
+  padding-bottom: 13px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  background-color: rgba(130, 179, 211, 1);
+  width: 60px;
+  height: 36px;
+  margin: 8px;
+}
+
+.pagination-item:nth-child(1),
+                :nth-child(5) {
+  background-color: rgba(242, 242, 242, 1);
+}
