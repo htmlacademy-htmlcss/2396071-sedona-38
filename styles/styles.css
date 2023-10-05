@@ -18,29 +18,27 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color:rgba(0, 0, 0, 1);
-  background: rgba(255, 255, 255, 1);
+  color:#000000;
+  background: #ffffff;
+
+  margin: 0;
 }
 
 
 /* Pages */
 
-.basket-12 {
+.basket-count {
   text-align: center;
   font-size: 10px;
-  font-weight: 400;
   line-height: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 4px;
-  padding-right: 5px;
-  color:rgba(255, 255, 255, 1);
+  padding: 5px 5px 5px 4px;
+  color:#ffffff;
   border-radius: 50%;
-  background-color: rgba(125, 181, 79, 1);
+  background-color: #7db54f;
 }
 
-/* Можно ли так убрать стилизацию списка через тег? */
-li {
+/* Можно ли так убрать стилизацию списка через тег?НЕЛЬЗЯЯЯ!! */
+.navigation-item {
   list-style-type:none;
 }
 
@@ -55,11 +53,11 @@ li {
 }
 
 .navigation-link.button {
-  color:rgba(255, 255, 255, 1);
+  color:#ffffff;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
   padding: 8px 50px;
   border-radius: 4px;
 }
@@ -68,25 +66,46 @@ li {
   /* width: 68px; */
   /* width: 100%;
   height: 100%; */
-  border-bottom: 2px rgba(117, 98, 87, 1) solid;
+  border-bottom: 2px #756257 solid;
 }
 
-.background-sedona{
-  color:rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
+.background-sedona {
+  background-image: url("../images/divider.png"), url("../images/background-sedona.jpg");
+  background-color: #000000;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 485px;
+}
+
+/* .background-sedona{
+  background-color: #000000;
   background-image: url("../images/background-sedona.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
 }
+
+.background-sedona::after {
+  content: '';
+  width: 1200px;
+  height: 57px;
+  background-image: url("../images/divider.png");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
 
 .visually-hidden {
   display: none;
 }
 
 .сity-name {
-  position: relative;
+  display: block;
+  margin: 0 auto;
   padding-top: 51px;
-  padding-left: 371px;
 }
 
 
@@ -109,19 +128,19 @@ li {
 .offer,
 .invitation-advantage,
 .search-info {
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
 
 .button.button-search {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 36px;
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
   padding: 8px 50px;
   border-radius: 4px;
   width: 276px;
@@ -153,42 +172,37 @@ li {
 
  .advantage-list li:first-child,
  .advantage-list li:last-child {
-  background-color: rgba(130, 179, 211, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
  /* Запись ниже срабатывает через запятуюбможно ли так прописывать псевдоклассы? */
 .advantage-list li:nth-child(3),
                   :nth-child(5) {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #83b3d31f;
 }
 
 .advantage-list li:nth-child(4) {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: #83b3d333;
 }
 
 /* как сократить запись ниже и сделать проще, короче? перечисление псевдоклассов через двоеточие не срабатывает */
 li:nth-child(3) .advantage-title,
 li:nth-child(4) .advantage-title,
 li:nth-child(5) .advantage-title {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 li:nth-child(3) .advantage-description,
 li:nth-child(4) .advantage-description,
 li:nth-child(5) .advantage-description {
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
 }
-
-
-
-
-
 
 /* Recommendations */
 
 .recommendations-list {
-  background: rgba(255, 255, 255, 1);
+  background: #ffffff;
 }
 .recommendations-item-1,
 .recommendations-item-3 {
@@ -196,7 +210,7 @@ li:nth-child(5) .advantage-description {
   padding: 80px 85px;
   width: 230px;
   height: 223px;
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #83b3d31f;
 }
 
 .recommendations-item-2  {
@@ -209,7 +223,7 @@ li:nth-child(5) .advantage-description {
 .signature-house,
 .signature-food,
 .signature-souvenir {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -217,7 +231,7 @@ li:nth-child(5) .advantage-description {
 }
 
 .recommendations-description {
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
 }
 
 
@@ -236,7 +250,7 @@ li:nth-child(5) .advantage-description {
 
 .newsletter-title {
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -245,7 +259,7 @@ li:nth-child(5) .advantage-description {
 
 .newsletter-info {
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -265,8 +279,8 @@ li:nth-child(5) .advantage-description {
 }
  /* Не могу разобраться в стилизации кнопки ПОДПИСАТЬСЯю не срабатывают паддинги, высота и ширина */
 .newsletter-button {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(130, 179, 211, 1);
+  color: #ffffff;
+  background-color: #82b3d3;
   padding: 8px 50px;
   font-size: 20px;
   font-weight: 700;
@@ -277,8 +291,9 @@ li:nth-child(5) .advantage-description {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-color: transparent ;
-}
+  border: #000000 4px solid;
 
+}
 
 /* Footer */
  /* Опять не отрабатывают внутренние отступы на иконках соц сетей */
@@ -288,7 +303,7 @@ li:nth-child(5) .advantage-description {
 
 .phone_number {
   text-align: center;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 40px;
   font-weight: 400;
   text-transform: uppercase;
@@ -302,14 +317,14 @@ li:nth-child(5) .advantage-description {
   background-image: url(../images/inner-header-background.jpg);
   /* width: 1200px;
   height: 412px; */
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .inner-header-title {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -317,14 +332,14 @@ li:nth-child(5) .advantage-description {
 
 .breadcrumbs-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
 }
 
 .catalog-filter-title {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
@@ -336,7 +351,7 @@ li:nth-child(5) .advantage-description {
 }
 
 .catalog-filter-list {
-color: rgba(255, 255, 255, 1);
+color: #ffffff;
 text-align: left;
 font-size: 18px;
 font-weight: 400;
@@ -345,19 +360,19 @@ line-height: 23px;
 
 .button-apply
  {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 20px;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   border-color: transparent;
   padding: 8px 50px;
   border-radius: 4px;
 }
 
 .button-reset {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -377,12 +392,12 @@ line-height: 23px;
 
 /* Почему бордер исчезает емли задавать пиксели? */
 .select-control {
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   font-weight: 400;
   line-height: 21px;
   font-size: 18px;
   padding: 14px 20px;
-  border-color:rgba(229, 229, 229, 1);
+  border-color:#e5e5e5;
   border-radius: 4px;
 }
 
@@ -392,13 +407,16 @@ line-height: 23px;
 }
 
 /* Поиск гостиниц */
+.hotel-card-item {
+  list-style-type:none;
+}
 
 .hotel-card-list a{
 text-decoration: none;
 }
 
 .hotel-card-title {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -406,7 +424,7 @@ text-decoration: none;
 
 .hotel-card-price,
 .hotel-price {
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -414,14 +432,13 @@ text-decoration: none;
 }
 
 .card-button a:nth-child(2) {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
-
 
 .hotel-card-button {
   text-align: center;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(117, 97, 87, 1);
+  color: #ffffff;
+  background-color: #756157;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -429,17 +446,23 @@ text-decoration: none;
   padding: 8px 50px;
   margin: 10px;
   border-radius: 4px;
-
-
 }
 
 .rating-star {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 18px;
+  height: 17px;
   margin: 10px;
 }
+/*
+.rating-star:nth-child(1) {
+  background-repeat: repeat;
+} */
 
 .rating-point{
   text-align: center;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -448,20 +471,18 @@ text-decoration: none;
 }
 
 .hotel-card-image {
-  padding-left: 20px 20px 16px 20px;
+  padding: 20px 20px 16px 20px;
 }
 
 
-
 /* Пагинация */
-
 .pagination a {
   text-decoration: none;
 }
 
 .pagination-item {
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   padding-top: 11px;
   padding-bottom: 13px;
   border-radius: 4px;
@@ -469,7 +490,7 @@ text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 36px;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
   width: 60px;
   height: 36px;
   margin: 8px;
@@ -477,5 +498,5 @@ text-decoration: none;
 
 .pagination-item:nth-child(1),
                 :nth-child(5) {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
 }
