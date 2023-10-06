@@ -14,18 +14,42 @@
   font-style: normal;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0 auto;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color:#000000;
   background: #ffffff;
 
-  margin: 0;
+  outline: 5px solid orange;
+  outline-offset: -5px;
 }
 
-
 /* Pages */
+.main-container {
+  flex-grow: 1;
+}
+
+/* .page-container {
+  margin: 0 auto;
+  width: 1280px;
+} */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1200;
+  margin: auto 70px;
+}
 
 .basket-count {
   display: inline-block;
