@@ -16,6 +16,7 @@
 
 html {
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -77,7 +78,6 @@ body {
   line-height: 24px;
   font-size: 20px;
   font-weight: 700;
-  text-transform: capitalize;
   text-decoration: none;
   text-align: center;
 }
@@ -102,9 +102,6 @@ body {
 }
 
 .navigation-link-current {
-  /* width: 68px; */
-  /* width: 100%;
-  height: 100%; */
   border-bottom: 2px #756257 solid;
 }
 
@@ -116,26 +113,6 @@ body {
   background-position: center bottom;
   min-height: 485px;
 }
-
-/* .background-sedona{
-  background-color: #000000;
-  background-image: url("../images/background-sedona.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  position: relative;
-}
-
-.background-sedona::after {
-  content: '';
-  width: 1200px;
-  height: 57px;
-  background-image: url("../images/divider.png");
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
 
 .visually-hidden {
   display: none;
@@ -200,9 +177,6 @@ body {
   text-align: center;
 }
 
-/* .advantage-title {
-  border-bottom: 2px black solid;
-} */
 
 .advantage-list li:not(:nth-child(2)):not(:nth-child(6)) {
   padding: 102px 85px;
@@ -223,12 +197,12 @@ body {
   color: #ffffff;
 }
 
-.advantage-list li:nth-child(3), .advantage-lis:nth-child(5) {
-  background-color: #83b3d31f;
+.advantage-list li:nth-child(3), .advantage-list:nth-child(5) {
+  background-color: rgba(130, 179, 212, 0.122);
 }
 
 .advantage-list li:nth-child(4) {
-  background-color: #83b3d333;
+  background-color: #82b3d3;
 }
 
 li:nth-child(3) .advantage-title,
@@ -243,12 +217,6 @@ li:nth-child(5) .advantage-description {
   color: #333333;
 }
 
-/* .advantage-line {
-  border: 2px;
-  color: #130101;
-  margin: 30px;
-} */
-
 /* Recommendations */
 .recommendations-list {
   display: flex;
@@ -262,7 +230,7 @@ li:nth-child(5) .advantage-description {
   text-align: center;
   padding: 80px 85px;
   width: 230px;
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.122);
 }
 
 .recommendations-item-2  {
@@ -284,9 +252,6 @@ li:nth-child(5) .advantage-description {
 .recommendations-description {
   color: #333333;
 }
-
-
-
 
 /* Newsletter */
 
@@ -332,7 +297,6 @@ li:nth-child(5) .advantage-description {
   border-color: transparent ;
   outline: none;
   cursor: pointer;
-
 }
 
 .newsletter-button {
@@ -346,7 +310,7 @@ li:nth-child(5) .advantage-description {
   line-height: 36px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-color: transparent ;
+  border-color: transparent;
   display: inline-block;
   cursor: pointer;
 }
@@ -399,8 +363,6 @@ li:nth-child(5) .advantage-description {
 
 .inner-background {
   background-image: url("../images/inner-header-background.jpg");
-  /* width: 1200px;
-  height: 412px; */
   color: #000000;
   background-color: #ffffff;
   background-size: 100% auto;
@@ -448,15 +410,14 @@ li:nth-child(5) .advantage-description {
 .button-container {
   width: 191px;
   margin-left: auto;
-
 }
 
 .catalog-filter-list {
-color: #ffffff;
-text-align: left;
-font-size: 18px;
-font-weight: 400;
-line-height: 23px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
 }
 
 .button-apply {
@@ -480,7 +441,6 @@ line-height: 23px;
   background-color: transparent;
   border-color: transparent;
   padding: 8px 50px;
-
 }
 
 .hotel-found {
@@ -535,10 +495,6 @@ line-height: 23px;
   text-align: left;
 }
 
-.card-button a:nth-child(2) {
-  background-color: #82b3d3;
-}
-
 .hotel-card-button {
   text-align: center;
   color: #ffffff;
@@ -552,6 +508,14 @@ line-height: 23px;
   border-radius: 4px;
 }
 
+.button-blue {
+  background-color: #82b3d3;
+}
+
+.button-green {
+  background-color: #7db54f;
+}
+
 .rating-star {
   background-image: url("../images/star.svg");
   background-repeat: repeat-x;
@@ -559,10 +523,6 @@ line-height: 23px;
   height: 17px;
   margin: 10px;
 }
-/*
-.rating-star:nth-child(1) {
-  background-repeat: repeat;
-} */
 
 .rating-point {
   text-align: center;
@@ -578,8 +538,8 @@ line-height: 23px;
   padding: 20px 20px 16px 20px;
 }
 
-
 /* Пагинация */
+
 .pagination a {
   text-decoration: none;
 }
