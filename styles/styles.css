@@ -27,6 +27,7 @@ body {
   line-height: 21px;
   color:#000000;
   background: #ffffff;
+  /* background-color: #f2f2f2; */
 }
 
 *,
@@ -617,6 +618,11 @@ li:nth-child(5) .advantage-description {
   margin-right: 28px;
 }
 
+.control-input {
+  width: 20px;
+  height: 19px;
+
+}
 .catalog-filter {
   display: flex;
   margin-top: 40px;
@@ -659,7 +665,7 @@ li:nth-child(5) .advantage-description {
 
 .button-container {
   width: 191px;
-  margin-left: auto;
+  margin-left: 70px;
 }
 
 .catalog-filter-list {
@@ -671,6 +677,71 @@ li:nth-child(5) .advantage-description {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+}
+
+element.style {
+}
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.price-container .cost-selection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+}
+.cost-selection span {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.cost-selection input {
+  font-weight: 700;
+  padding: 12px 20px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+.price-container button {
+  grid-column: 1/-1;
+}
+.cost-selection:nth-child(1) input {
+  border-radius: 4px 0 0 4px;
+}
+
+.filter-form .price {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.price-container {
+  display: grid;
+  gap: 36px 2px;
+  grid-template-columns: repeat(2, 143px);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.cost-selection:nth-child(2) input {
+  border-radius: 0 4px 4px 0;
 }
 
 .button-apply {
