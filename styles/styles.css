@@ -606,7 +606,6 @@ li:nth-child(5) .advantage-description {
   width: 6px;
   height: 10px;
   /* margin: 0 10px 0 10px; */
-
 }
 
 .breadcrumbs-link {
@@ -621,6 +620,16 @@ li:nth-child(5) .advantage-description {
 .catalog-filter {
   display: flex;
   margin-top: 40px;
+  /* text-decoration: none; */
+}
+
+.catalog-filter-item {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-filter-title {
@@ -629,16 +638,22 @@ li:nth-child(5) .advantage-description {
   font-weight: 700;
   text-transform: capitalize;
   line-height: 24px;
+  padding: 0;
+  margin: 0 0 32px 0;
 }
 
 .catalog-filter-group1 {
-  width: 150px;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
   margin-right: 70px;
   border-color: transparent;
 }
 
 .catalog-filter-group2 {
-  width: 150px;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
   border-color: transparent;
 }
 
@@ -648,6 +663,9 @@ li:nth-child(5) .advantage-description {
 }
 
 .catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   color: #ffffff;
   text-align: left;
   font-size: 18px;
@@ -696,8 +714,8 @@ li:nth-child(5) .advantage-description {
   border-color:#e5e5e5;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  width: 252px;
-  height: 49px;
+  min-width: 252px;
+  min-height: 49px;
 }
 
 .button-light {
@@ -722,14 +740,6 @@ li:nth-child(5) .advantage-description {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-
-}
-
-.hotel-card-item {
-  display: grid;
-  grid-template-columns: 140px 140px;
-  grid-template-rows: 212px 28px 36px 37px;
-  list-style-type:none;
 }
 
 .hotel-card-list a {
@@ -738,18 +748,31 @@ li:nth-child(5) .advantage-description {
 
 .hotel-card-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
-  grid-template-rows: 348px 438px;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  margin: 0;
+  margin: 40px 0 0 0;
   padding: 0;
 }
 
+.hotel-card-item {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 300px;
+  grid-template-rows: 212px min-content auto min-content 37px;
+  list-style-type:none;
+  padding: 20px;
+  border-radius: 4px;
+  border:1px solid #e6e6e6;
+}
+
 .hotel-card-title {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
 }
 
 .hotel-card-price,
@@ -761,7 +784,26 @@ li:nth-child(5) .advantage-description {
   text-align: left;
 }
 
+.hotel-card-price-item {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+}
+
 .hotel-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 116px;
+  height: 20px;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
@@ -769,17 +811,27 @@ li:nth-child(5) .advantage-description {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 20px;
-  padding: 8px 50px;
-  margin: 10px;
+  padding: 8px 12px;
+  margin-right: 20px;
   border-radius: 4px;
 }
 
 .button-blue {
   background-color: #82b3d3;
+  margin: 0;
 }
 
 .button-green {
   background-color: #7db54f;
+  margin-right: 0;
+}
+
+.rating {
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .rating-star {
@@ -787,22 +839,28 @@ li:nth-child(5) .advantage-description {
   background-repeat: repeat-x;
   width: 18px;
   height: 17px;
-  margin: 10px;
+  margin: 0;
 }
 
 .rating-point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #333333;
+  width: 140px;
+  height: 36px;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 20px;
   border-radius: 4px;
+  background-color: #f2f2f2;
 }
 
-.hotel-card-image {
+.hotel-image {
   grid-column: 1 / -1;
-  padding: 20px 20px 16px 20px;
+  grid-row: 1 / 2;
 }
 
 /* Пагинация */
