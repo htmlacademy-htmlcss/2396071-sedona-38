@@ -137,9 +137,9 @@ body {
   border-radius: 4px;
   margin-left: 20px;
   align-items: center;
-  min-width: 160px;
+  min-width: 140px;
   height: 36px;
-  padding: 0;
+  padding: 0 10px;
   margin-top: 14px;
 }
 
@@ -219,7 +219,6 @@ body {
   padding: 8px 50px;
   border-radius: 4px;
   width: 276px;
-  height: 36px;
   text-decoration: none;
 }
 
@@ -244,6 +243,7 @@ body {
 .offer {
   margin-top: 0;
   margin-bottom: 90px;
+  width: 651px;
 }
 
 .advantage {
@@ -389,9 +389,12 @@ position: relative;
 }
 
 .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-image: url("../images/subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
   margin: 0;
@@ -443,7 +446,7 @@ position: relative;
   font-weight: 400;
   line-height: 26px;
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 54px;
 }
 
 .newsletter-info-catalog {
@@ -563,7 +566,7 @@ position: relative;
   background-image: url("../images/inner-header-background.jpg");
   color: #000000;
   background-color: #ffffff;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 70px;
 }
@@ -821,7 +824,7 @@ position: relative;
   display: grid;
   gap: 16px;
   grid-template-columns: 300px;
-  grid-template-rows: 212px min-content auto min-content 37px;
+  grid-template-rows: 212px 1fr auto min-content auto;
   list-style-type:none;
   padding: 20px;
   border-radius: 4px;
@@ -863,6 +866,7 @@ position: relative;
 .card-button {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   grid-column: 1 / -1;
   grid-row: 4 / 5;
 }
@@ -872,7 +876,7 @@ position: relative;
   justify-content: center;
   align-items: center;
   width: 116px;
-  height: 20px;
+  min-height: 20px;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
@@ -917,14 +921,15 @@ position: relative;
   align-items: center;
   text-align: center;
   color: #333333;
-  width: 140px;
-  height: 36px;
+  width: 120px;
+  min-height: 20px;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 20px;
   border-radius: 4px;
   background-color: #f2f2f2;
+  padding: 8px 10px;
 }
 
 .hotel-image {
