@@ -70,6 +70,9 @@ body {
 }
 
 .basket-count {
+  position: absolute;
+  top: 9px;
+  right: 8px;
   display: inline-block;
   text-align: center;
   font-size: 10px;
@@ -79,6 +82,10 @@ body {
   border-radius: 50%;
   background-color: #7db54f;
   width: 10px;
+}
+
+.basket-position {
+  position: relative;
 }
 
 .navigation-item {
@@ -560,6 +567,7 @@ position: relative;
 }
 .filter-group-container {
   display: flex;
+  align-items: baseline;
 }
 
 .inner-background {
@@ -588,16 +596,20 @@ position: relative;
   flex-wrap: wrap;
 }
 
-.breadcrumbs-element::before {
-  content: '';
-  display: block;
+.breadcrumbs-item-position {
   position: relative;
-  left: -15px;
+  padding-left: 18px;
+}
+
+.breadcrumbs-element {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
   background-image: url(../images/breadcrumbs-2.svg);
   background-repeat: no-repeat;
-  background-color: red;
-  width: 6px;
-  height: 10px;
+  width: 8px;
+  height: 11px;
   /* margin: 0 10px 0 10px; */
 }
 
@@ -607,14 +619,14 @@ position: relative;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  margin-right: 28px;
+  margin-right: 10px;
 }
 
 .control-input {
   width: 20px;
   height: 19px;
-
 }
+
 .catalog-filter {
   display: flex;
   margin-top: 40px;
@@ -735,6 +747,11 @@ position: relative;
   border-radius: 0 4px 4px 0;
 }
 
+.group-price {
+  display: flex;
+  margin-left: auto;
+}
+
 .button-apply {
   color: #ffffff;
   font-size: 16px;
@@ -776,7 +793,7 @@ position: relative;
   border-color:#e5e5e5;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  min-width: 252px;
+  min-width: 292px;
   min-height: 49px;
 }
 

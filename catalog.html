@@ -30,14 +30,16 @@
                 <img src="images/header-icon/search.svg" width="20" height="20" alt="Поиск">
               </a>
             </li>
-            <li class="navigation-item">
-              <span class="basket-count">12</span>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img src="images/header-icon/basket.svg" width="18" height="17" alt="Корзина">
-              </a>
-            </li>
+            <div class="basket-position">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  <img src="images/header-icon/basket.svg" width="18" height="17" alt="Корзина">
+                </a>
+              </li>
+              <li class="navigation-item">
+                <span class="basket-count">12</span>
+              </li>
+            </div>
             <li class="navigation-item">
               <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
             </li>
@@ -58,7 +60,8 @@
                 <!-- <li class="breadcrumbs-item">
                   <img class="breadcrumbs-img" src="images/breadcrumbs-2.svg" width="6" height="10" alt="arrow"></img>
                 </li> -->
-                <li class="breadcrumbs-item breadcrumbs-element">
+                <li class="breadcrumbs-item breadcrumbs-item-position">
+                  <span class="breadcrumbs-element"></span>
                   <a class="breadcrumbs-link" href="#">Гостиницы</a>
                 </li>
               </ul>
@@ -66,7 +69,7 @@
             <section class="catalog-hotel">
               <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="filter-group-container">
+                <d class="filter-group-container">
                   <fieldset class="catalog-filter-group1">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
@@ -125,7 +128,7 @@
                         <input type="number" value="9000">
                       </label>
                       <button type=""></button>
-                  </div>
+                    </div>
                   </fieldset>
                   <div class="button-container">
                     <button class="button button-apply" type="submit">ПРИМЕНИТЬ</button>
