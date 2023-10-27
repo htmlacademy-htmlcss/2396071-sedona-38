@@ -851,33 +851,47 @@ position: relative;
   font-weight: 400;
   line-height: 21px;
   font-size: 18px;
-  padding: 14px 20px;
-  border-color:#e5e5e5;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   min-width: 292px;
-  min-height: 49px;
   margin-left: auto;
+  height: 48px;
+  padding-left: 20px;
 }
 
 .button-light {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
   margin-left: 8px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-light:hover {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.button-light:focus {
+  border: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+
+.button-light:active {
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .view-button {
   display: flex;
   align-items: center;
   margin: 0;
-  max-width: 144px;
-  margin-left: 70px;
+  margin-left: 62px;
 }
 
 /* Поиск гостиниц */
@@ -1059,14 +1073,26 @@ position: relative;
   display: inline-block;
 }
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.302);
+}
+
 .pagination-current,
-.pagination-between
-{
+.pagination-between {
   background-color: #f2f2f2;
   color: #000000;
 }
 
 
-.pagination-link (:last-child) {
+.pagination-link :last-child {
   margin-right: 8px;
 }
