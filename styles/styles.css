@@ -446,8 +446,6 @@ position: relative;
   display: flex;
   justify-content: center;
   margin-top: 0;
-  max-width: 684px;
-  margin-left: 258px;
 }
 
 .newsletter-info {
@@ -536,6 +534,22 @@ position: relative;
   margin-right: 0;
 }
 
+.my-svg {
+  fill: #83b3d3;
+}
+
+.my-svg:hover {
+  fill: #68a2ca;
+}
+
+.my-svg:focus {
+  fill: #83b3d3;
+}
+
+.my-svg:active {
+  fill: hsla(204, 48%, 60%, 0.3);
+}
+
 .phone-number {
   display: block;
   text-align: center;
@@ -545,6 +559,18 @@ position: relative;
   text-transform: uppercase;
   line-height: 40px;
   text-decoration: none;
+}
+
+.phone-number:hover {
+  color: #756157;
+}
+
+.phone-number:focus {
+  color: #756157;
+}
+
+.phone-number:active {
+  color: rgba(117, 97, 87, 0.302);
 }
 
 .contact-phone {
@@ -558,6 +584,21 @@ position: relative;
   margin-left: auto;
 }
 
+.logo-svg {
+  fill: #000000;
+}
+
+.logo-svg:hover {
+  fill: #756157;
+}
+
+.logo-svg:focus {
+  fill: #756157;
+}
+
+.logo-svg:active {
+  fill: rgba(117, 97, 87, 0.302);
+}
 .button-social {
   display: flex;
   justify-content: center;
