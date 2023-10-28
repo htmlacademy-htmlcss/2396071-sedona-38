@@ -26,7 +26,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   color:#000000;
-  /* background: #ffffff; */
   background-color: #f2f2f2;
 }
 
@@ -60,6 +59,10 @@ body {
   width: 140px;
   margin: 0 30px 0 70px;
 }
+
+/* .svg-navigation:hover {
+  color: #756157;
+} */
 
 .navigation {
   display: flex;
@@ -151,7 +154,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* min-height: 64px; */
   padding: 0;
   width: 44px;
   height: 64px;
@@ -165,7 +167,6 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #756157;
-  /* padding: 8px 50px; */
   border-radius: 4px;
   margin-left: 20px;
   align-items: center;
@@ -183,6 +184,24 @@ body {
 }
 
 .navigation-link-current::before {
+  position: absolute;
+  top: 64px;
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-link-current:hover::before {
+  position: absolute;
+  top: 64px;
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-link-about:hover::before {
   position: absolute;
   top: 64px;
   width: calc(100% - 32px);
@@ -315,11 +334,11 @@ position: relative;
   max-width: 175px;
 }
 
-
 /* .advantage-title::after:first-child {
   background-color: #FFFFFF4D;
 
 } */
+
 .advantage-title::after {
   content: "";
   position: absolute;
@@ -701,7 +720,6 @@ position: relative;
   background-repeat: no-repeat;
   width: 8px;
   height: 11px;
-  /* margin: 0 10px 0 10px; */
 }
 
 .breadcrumbs-link {
@@ -745,14 +763,9 @@ position: relative;
   color: #FFFFFF;
 }
 
-.control-input:ho {
-
-}
-
 .catalog-filter {
   display: flex;
   margin-top: 40px;
-  /* text-decoration: none; */
 }
 
 .catalog-filter-item {
