@@ -103,6 +103,24 @@ body {
   text-align: center;
 }
 
+.navigation-link.button:hover {
+  background-color: #615048;
+}
+
+.navigation-link.button:focus {
+  background-color: #615048;
+}
+
+.navigation-link.button:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #756157;
+}
+
+.navigation-link.button:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -157,8 +175,22 @@ body {
   z-index: 2;
 }
 
-.navigation-link-current {
-  border-bottom: 2px #756257 solid;
+.navigation-link-current::before {
+  position: absolute;
+  top: 64px;
+  width: 68px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  top: 64px;
+  width: 68px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .background-sedona {
@@ -670,6 +702,18 @@ position: relative;
   margin-right: 10px;
 }
 
+.breadcrumbs-hotel:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-hotel:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-hotel:active {
+  color: #FFFFFF4D;
+}
+
 .control {
   display: flex;
 }
@@ -771,7 +815,13 @@ position: relative;
   background-color: #f2f2f2;
   border: none;
   height: 40px;
+  text-decoration: none;
 }
+
+.price-selection:focus {
+  border-color: #83B3D3;
+}
+
 .price-container button {
   grid-column: 1/-1;
 }
@@ -857,6 +907,18 @@ position: relative;
   margin-left: auto;
   height: 48px;
   padding-left: 20px;
+}
+
+.dropdown:hover {
+  border-color: #68A2CA;
+}
+
+.dropdown:focus {
+  border-color: #68A2CA;
+}
+
+.dropdown:active {
+  border-color: #0000004D;
 }
 
 .button-light {
