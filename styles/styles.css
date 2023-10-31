@@ -251,7 +251,7 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
-  clear: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -772,7 +772,9 @@ position: relative;
 }
 
 .control {
-  display: flex;
+  position: relative;
+  display: block;
+  padding-left: 36px;
 }
 
 .control-input {
@@ -790,7 +792,7 @@ position: relative;
 
 .catalog-filter {
   display: flex;
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 .catalog-filter-item {
@@ -811,8 +813,6 @@ position: relative;
   padding: 0;
   margin: 0 0 32px 0;
 }
-
-
 
 .catalog-filter-group1,
 .catalog-filter-group2 {
@@ -840,6 +840,87 @@ position: relative;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+}
+
+.control {
+  position: relative;
+}
+
+.control-label {
+  font-weight: 400;
+  line-height: 23px;
+  font-size: 18px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+/* .control-input:disabled + .control-mark {
+  border-color:red;
+} */
+
+/* !!!!!!!! */
+.control:hover .control-mark,
+.control:hover .control-mark-type {
+  background-color: rgba(255, 255, 255, 0.60);
+}
+
+.control:active .control-mark,
+.control:active .control-mark-type{
+  background-color:#FFFFFF;
+  border: 3px solid #83B3D3;
+}
+
+
+/* Закугления бордера внутри чек боксов
+???????  Дергается чек бокс при сосоянии active */
+
+.control:active .control-mark::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #83B3D3;
+  border-radius: 4px;
+  left: -2px;
+  right: -3px;
+  top: -2px;
+  bottom: -3px;
+  width: 20px;
+  height: 20px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  background-image: url("../images/control-checkbox.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+
+.control-mark-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark-type::before {
+  position: absolute;
+  background-image: url("../images/control-radio.svg");
+  background-repeat: no-repeat;
+  content: "";
+  width: 20px;
+  height: 20px;
 }
 
 /* Range  */
