@@ -177,5 +177,44 @@
         </section>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="svg-modal-close" width="14" height="14" viewBox="0 0 14 14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+            <path id="Vector" d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="black"/>
+            </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="picker-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="date-picker">
+              <h3 class="picker-form-title">Дата заезда:</h3>
+              <label for="datepicker"></label>
+              <input type="date" id="datepicker" name="datepicker" placeholder="27 апреля 2020">
+              <span class="signature">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="date-picker">
+              <h3 class="picker-form-title">Дата выезда:</h3>
+              <label for="datepicker"></label>
+              <input type="date" id="datepicker" name="datepicker" placeholder="1 сентября 2023">
+              <span class="signature">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="person-selector">
+              <h3 class="picker-form-title">Взрослые:</h3>
+              <label for="person-count"></label>
+              <input type="number" id="person-countr" name="person-count" min="1" value="1">
+            </p>
+            <p class="person-selector">
+              <h3 class="picker-form-title">Дети:</h3>
+              <label for="person-count"></label>
+              <input type="number" id="person-countr" name="person-count" min="1" value="1">
+              <span class="modal-info"></span>
+            </p>
+            <button class="button picker-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
