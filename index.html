@@ -177,7 +177,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -188,29 +188,37 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="picker-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="date-picker">
-              <h3 class="picker-form-title">Дата заезда:</h3>
-              <label for="datepicker"></label>
-              <input type="date" id="datepicker" name="datepicker" placeholder="27 апреля 2020">
-              <span class="signature">Мы не можем отправить вас в прошлое.</span>
-            </p>
-            <p class="date-picker">
-              <h3 class="picker-form-title">Дата выезда:</h3>
-              <label for="datepicker"></label>
-              <input type="date" id="datepicker" name="datepicker" placeholder="1 сентября 2023">
-              <span class="signature">На эти даты есть свободные номера. Пока есть.</span>
-            </p>
-            <p class="person-selector">
-              <h3 class="picker-form-title">Взрослые:</h3>
-              <label for="person-count"></label>
-              <input type="number" id="person-countr" name="person-count" min="1" value="1">
-            </p>
-            <p class="person-selector">
-              <h3 class="picker-form-title">Дети:</h3>
-              <label for="person-count"></label>
-              <input type="number" id="person-countr" name="person-count" min="1" value="1">
-              <span class="modal-info"></span>
-            </p>
+            <ul class="picker-form-list">
+              <li class="date-picker">
+                <h3 class="picker-form-title">Дата заезда:</h3>
+                <label for="datepicker"></label>
+                <input class="picker-form-date" type="date" id="datepicker" name="datepicker" placeholder="27 апреля 2020">
+                <span class="signature">Мы не можем отправить вас в прошлое.</span>
+              </li>
+              <li class="date-picker">
+                <h3 class="picker-form-title">Дата выезда:</h3>
+                <label for="datepicker"></label>
+                <input class="picker-form-date" type="date" id="datepicker" name="datepicker" placeholder="1 сентября 2023">
+                <span class="signature-out">На эти даты есть свободные номера. Пока есть.</span>
+              </li>
+              <div class="person-selector-row">
+                <li class="person-selector">
+                  <h3 class="picker-form-title">Взрослые:</h3>
+                  <label for="person-count">
+                    <span class="plus"></span>
+                    <span class="minus"></span>
+                  </label>
+                  <input class="person-form-count" type="number" id="person-countr" name="person-count" min="1" value="1">
+                </li>
+                <li class="person-selector">
+                  <h3 class="picker-form-title">Дети:
+                    <span class="modal-info"></span>
+                  </h3>
+                  <label for="person-count"></label>
+                  <input class="person-form-count" type="number" id="person-countr" name="person-count" min="1" value="1">
+                </li>
+             </div>
+            </ul>
             <button class="button picker-form-button" type="submit">Найти</button>
           </form>
         </section>
