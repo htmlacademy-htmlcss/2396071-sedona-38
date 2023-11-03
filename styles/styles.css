@@ -708,7 +708,7 @@ position: relative;
   z-index: 1000;
 }
 
-/* Звкрытие модвльного окна */
+/* Звкрытие модaльного окна */
 /* .modal-container-close {
   display: none;
 } */
@@ -719,6 +719,7 @@ position: relative;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .modal-search {
@@ -752,6 +753,7 @@ position: relative;
 
 .modal-close-button:active {
   background-color: #e6e6e6;
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -766,6 +768,7 @@ position: relative;
 }
 
 .picker-form-title {
+  position: relative;
   margin: 0;
   color:#000000;
   font-size: 20px;
@@ -804,6 +807,21 @@ position: relative;
   line-height: 24px;
 }
 
+.field-date {
+  background-image: url(../images/modal-icon/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.field-date:hover {
+  background-color: #e6e6e6;
+}
+
+.field-date:focus {
+  background-color: #e6e6e6;
+  outline:3px solid #83b3d3;
+}
+
 .picker-form-list {
   margin: 0;
   padding: 0;
@@ -811,14 +829,13 @@ position: relative;
 
 .signature,
 .signature-out {
-  position: absolute;
-  top: 52px;
-  left: 160px;
+  display: flex;
   color: #FF5757;
   font-size: 16px;
   font-family: "PT Sans";
   font-weight: 400;
   line-height: 21px;
+  padding: 4px 0 33px 159px;
 }
 
 .signature-out {
@@ -832,13 +849,11 @@ position: relative;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  width: 110px;
-  height: 48px;
+  width: 30px;
   background-color: #F2F2F2;
   border: none;
-  border-radius: 4px;
-  margin-left: 46px;
-  padding: 0;
+  border-radius: 0;
+  padding: 14px 0;
 }
 
 .person-count {
@@ -852,27 +867,75 @@ position: relative;
   margin: 0;
 }
 
-.plus::before,
-.plus::after {
-  position: absolute;
-  right: 17px;
-  width: 14px;
-  height: 2px;
-  background-color: rgba(117, 97, 87, 0.302);
-  content: "";
+.button-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 48px;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
-.plus::before {
-  transform: rotate(90deg);
+.button-plus-svg,
+.button-plus-svg:active {
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
-.minus {
-  position: absolute;
-  right: 81px;
-  width: 14px;
-  height: 2px;
-  background-color: rgba(117, 97, 87, 0.302);
+.button-plus-svg:hover {
+  fill: #000000;
+  fill-opacity: 1;
 }
+
+.button-plus-svg:focus {
+  fill: #000000;
+  fill-opacity: 1;
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+}
+
+.button-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 48px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  margin-left: 46px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.button-minus-svg,
+.button-minus-svg:active {
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: #756157;
+  fill-opacity: 0.3;
+}
+
+.button-minus-svg:hover {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.button-minus-svg:focus {
+  fill: #000000;
+  fill-opacity: 1;
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+}
+
 
 .date-picker {
   position: relative;
@@ -881,8 +944,6 @@ position: relative;
   justify-content: space-between;
   padding: o;
   margin: 0;
-  margin-bottom: 48px;
-
 }
 
 .person-selector-row {
@@ -898,6 +959,74 @@ position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  margin-left: -27px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 26px;
+  height: 26px;
+  display: block;
+  border-radius: 50%;
+  background-color: #83b3d3;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  background-color: #83b3d3;
+}
+
+.tooltip-text {
+  width: 216px;
+  padding: 18px 18px 15px 22px;
+  background-color: #333333;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: absolute;
+  top: 40px;
+  margin-bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url(../images/modal-icon/modal-triangle.svg);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.picker-form-title-info {
+  position: relative;
+  padding-right: 36px;
+  max-width: 135px;
 }
 
 /* Каталог */
@@ -1552,21 +1681,24 @@ position: relative;
 .pagination-link:not(.pagination-current, .pagination-between):hover,
  .button.newsletter-button:hover,
  .button.button-apply:hover,
- .button-blue:hover {
+ .button-blue:hover,
+ .picker-form-button:hover {
   background-color: #68A2CA;
 }
 
 .pagination-link:focus,
 .button.newsletter-button:focus,
 .button.button-apply:focus,
-.button-blue:focus {
+.button-blue:focus,
+.picker-form-button:focus {
   background-color: #68A2CA;
 }
 
 .pagination-link:active,
 .button.newsletter-button:active,
 .button.button-apply:active,
-.button-blue:active {
+.button-blue:active,
+.picker-form-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.302);
 }

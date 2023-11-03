@@ -191,31 +191,66 @@
             <ul class="picker-form-list">
               <li class="date-picker">
                 <h3 class="picker-form-title">Дата заезда:</h3>
-                <label for="datepicker"></label>
-                <input class="picker-form-date" type="date" id="datepicker" name="datepicker" placeholder="27 апреля 2020">
-                <span class="signature">Мы не можем отправить вас в прошлое.</span>
+                <label for="date-start">
+                  <input class="picker-form-date field-date" type="text" id="date-start" name="date-start" value="27 апреля 2020" placeholder="укажите дату" required>
+                </label>
               </li>
+              <span class="signature">Мы не можем отправить вас в прошлое.</span>
               <li class="date-picker">
                 <h3 class="picker-form-title">Дата выезда:</h3>
-                <label for="datepicker"></label>
-                <input class="picker-form-date" type="date" id="datepicker" name="datepicker" placeholder="1 сентября 2023">
-                <span class="signature-out">На эти даты есть свободные номера. Пока есть.</span>
+                <label for="date-end">
+                  <input class="picker-form-date field-date" type="text" id="date-end" value="1 сентября 2023" name="date-end" placeholder="укажите дату">
+                </label>
               </li>
+              <span class="signature-out">На эти даты есть свободные номера. Пока есть.</span>
               <div class="person-selector-row">
                 <li class="person-selector">
+                  <label for="person-count"></label>
                   <h3 class="picker-form-title">Взрослые:</h3>
-                  <label for="person-count">
-                    <span class="plus"></span>
-                    <span class="minus"></span>
-                  </label>
-                  <input class="person-form-count" type="number" id="person-countr" name="person-count" min="1" value="1">
+                  <button class="button-minus" type="">
+                    <svg class="button-minus-svg" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input class="person-form-count" type="number" id="person-count" name="person-count" min="1" value="2" max="99">
+                  <button class="button-plus" type="">
+                    <svg class="button-plus-svg" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
                 </li>
                 <li class="person-selector">
-                  <h3 class="picker-form-title">Дети:
-                    <span class="modal-info"></span>
-                  </h3>
-                  <label for="person-count"></label>
-                  <input class="person-form-count" type="number" id="person-countr" name="person-count" min="1" value="1">
+                  <span class="modal-info">
+                    <label for="person-count" class="modal-info picker-form-title picker-form-title-info">
+                      Дети:
+                    </label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
+                    </span>
+                  </span>
+                  <!-- <div class="modal-info-block">
+                    <p class="modal-block">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      <span class="modal-triangle"></span>
+                    </p>
+                  </div> -->
+                  <button class="button-minus" type="">
+                    <svg class="button-minus-svg" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input class="person-form-count" type="number" id="person-count" name="person-count" min="1" value="2" max="99">
+                  <button class="button-plus" type="">
+                    <svg class="button-plus-svg" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
                 </li>
              </div>
             </ul>
