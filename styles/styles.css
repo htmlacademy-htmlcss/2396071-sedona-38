@@ -74,7 +74,7 @@ body {
 
 .basket-count {
   position: absolute;
-  top: 9px;
+  top: 12px;
   right: 8px;
   display: inline-block;
   text-align: center;
@@ -326,6 +326,10 @@ body {
   list-style-type:none;
 }
 
+.advantage-item .advantage-title-mittle {
+  margin-top: 12px;
+}
+
 .offer {
   margin-top: 0;
   margin-bottom: 90px;
@@ -371,7 +375,7 @@ position: relative;
   position: absolute;
   width: 60px;
   height: 2px;
-  top: 86px;
+  top: 85px;
   left: 57px;
   background-color: rgba(0, 0, 0, 0.302);
 }
@@ -409,11 +413,13 @@ position: relative;
 
 .advantage-description {
   margin: 0;
+  min-height: 54px;
 }
 .street-image,
 .nature-image {
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 
@@ -429,14 +435,14 @@ position: relative;
 .recommendations-item-1,
 .recommendations-item-3 {
   text-align: center;
-  padding: 80px 85px;
+  padding: 78px 85px;
   width: 230px;
   background-color: #83b3d31f;
 }
 
 .recommendations-item-2  {
   text-align: center;
-  padding: 80px 85px;
+  padding: 79px 85px;
   width: 230px;
 }
 
@@ -448,7 +454,7 @@ position: relative;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 28px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 
@@ -502,7 +508,7 @@ position: relative;
   background-repeat: no-repeat;
   width: 1200px;
   margin: 0;
-  padding-top: 96px;
+  padding-top: 73px;
   padding-bottom: 104px;
   background-color: #68A2CA;
   }
