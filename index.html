@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/header-icon/logo.svg" width="140" height="70" alt="Логотип города Седона">
@@ -55,21 +55,21 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-index">
+      <main class="main-container main-index" data-test="main">
         <div class="page-container">
-          <section class="welcome">
+          <section class="welcome" data-test="hero">
             <h1 class="visually-hidden">Welcome to Sedona</h1>
             <div class="background-sedona">
               <img class="сity-name" src="images/welcome.svg" alt="Welcome to Sedona">
             </div>
           </section>
-          <section class="title-description">
+          <section class="title-description" data-test="advantages">
             <h2 class="description">Седона — небольшой городок в Аризоне,
               заслуживающий большего!
             </h2>
             <p class="offer">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </section>
-          <section class="advantage">
+          <section class="advantage" data-test="advantages">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantage-list">
               <li class="advantage-item">
@@ -102,11 +102,11 @@
               </li>
             </ul>
           </section>
-          <section class="invitation">
+          <section class="invitation" data-test="service">
             <h2 class="invitation-offer">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="invitation-advantage">Опытный персонал и качественное обслуживание!</p>
           </section>
-          <section>
+          <section data-test="service">
             <h2 class="visually-hidden">Рекомендации</h2>
             <ul class="recommendations-list">
               <li class="recommendations-item-1">
@@ -126,12 +126,12 @@
               </li>
             </ul>
           </section>
-          <section class="search-hotel">
+          <section class="search-hotel" data-test="search">
             <h2 class="search-title">Заинтересовались?</h2>
             <p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button button-search disabled" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
           </section>
-          <section class="newsletter">
+          <section class="newsletter" data-test="subscribe">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <p class="newsletter-info">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -142,7 +142,7 @@
           </section>
         </div>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-social-list">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social">
@@ -178,7 +178,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-close" data-test="modal">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
