@@ -807,9 +807,9 @@ position: relative;
 }
 
 /* Закрытие модaльного окна */
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -967,8 +967,12 @@ position: relative;
 .person-form-count::-webkit-outer-spin-button,
 .person-form-count::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: textfield;
+          appearance: none;
   margin: 0;
+}
+
+.person-form-count {
+  appearance: textfield;
 }
 
 .button-plus {
