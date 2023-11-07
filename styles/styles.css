@@ -73,6 +73,8 @@ body {
 }
 
 .navigation-logo {
+  display: flex;
+  align-self: flex-start;
   width: 140px;
   margin: 0 30px 0 70px;
 }
@@ -188,9 +190,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -200,9 +202,11 @@ body {
 }
 
 .navigation-user {
+  display: flex;
+  align-self: flex-start;
   min-width: 320px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 24px;
 }
 
 .navigation-user .navigation-link:nth-child(1)
@@ -252,7 +256,7 @@ body {
 
 .navigation-link-current::before {
   position: absolute;
-  top: 64px;
+  top: 63px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -261,7 +265,7 @@ body {
 
 .navigation-link-current:hover::before {
   position: absolute;
-  top: 64px;
+  top: 63px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -270,7 +274,7 @@ body {
 
 .navigation-link-about:hover::before {
   position: absolute;
-  top: 64px;
+  top: 63px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -813,7 +817,7 @@ position: relative;
 
 .modal {
   position: relative;
-  margin: auto;
+  margin: 396px auto auto auto;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
@@ -953,9 +957,9 @@ position: relative;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  width: 30px;
+  width: 31px;
   background-color: #F2F2F2;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 0;
   padding: 14px 0;
   max-height: 48px;
@@ -977,6 +981,31 @@ position: relative;
   appearance: textfield;
 }
 
+.person-selector-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 48px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  margin-left: 46px;
+  background-color: #f2f2f2;
+}
+
+.person-selector-back-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 48px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #f2f2f2;
+}
+
 .button-plus {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,8 +1017,8 @@ position: relative;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: center;
@@ -998,20 +1027,20 @@ position: relative;
   cursor: pointer;
 }
 
-.button-plus-svg,
-.button-plus-svg:active {
+.button-plus,
+.button-plus:active {
   background-repeat: no-repeat;
   background-position: center;
   fill: #756157;
   fill-opacity: 0.3;
 }
 
-.button-plus-svg:hover {
+.button-plus:hover {
   fill: #000000;
   fill-opacity: 1;
 }
 
-.button-plus-svg:focus {
+.button-plus:focus {
   fill: #000000;
   fill-opacity: 1;
   outline: 3px solid #82b3d3;
@@ -1029,29 +1058,27 @@ position: relative;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   border: none;
-  border-radius: 4px 0 0 4px;
-  margin-left: 46px;
   cursor: pointer;
   background-color: #f2f2f2;
 }
 
-.button-minus-svg,
-.button-minus-svg:active {
+.button-minus,
+.button-minus:active {
   background-repeat: no-repeat;
   background-position: center;
   fill: #756157;
   fill-opacity: 0.3;
 }
 
-.button-minus-svg:hover {
+.button-minus:hover {
   fill: #000000;
   fill-opacity: 1;
 }
 
-.button-minus-svg:focus {
+.button-minus:focus {
   fill: #000000;
   fill-opacity: 1;
   outline: 3px solid #82b3d3;
@@ -1610,6 +1637,8 @@ position: relative;
           appearance: none;
 }
 
+
+
 .dropdown:hover,
 .dropdown:focus {
   border-color: #68A2CA;
@@ -1640,17 +1669,18 @@ position: relative;
 
 .button-light:hover {
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .button-light:focus {
   border: 2px solid #68A2CA;
-  border-radius: 4px;
 }
 
 .button-light:active {
+  border:  2px solid #000000;
+}
+
+.button-light:first-child {
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .view-button {
