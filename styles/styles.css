@@ -206,7 +206,7 @@ body {
   align-self: flex-start;
   min-width: 320px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 24px;
 }
 
 .navigation-user .navigation-link:nth-child(1)
@@ -256,7 +256,7 @@ body {
 
 .navigation-link-current::before {
   position: absolute;
-  top: 64px;
+  top: 63px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -265,7 +265,7 @@ body {
 
 .navigation-link-current:hover::before {
   position: absolute;
-  top: 64px;
+  top: 63px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -274,7 +274,7 @@ body {
 
 .navigation-link-about:hover::before {
   position: absolute;
-  top: 64px;
+  top: 63px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -817,7 +817,7 @@ position: relative;
 
 .modal {
   position: relative;
-  margin: auto;
+  margin: 396px auto auto auto;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
