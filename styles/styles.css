@@ -94,7 +94,7 @@ body {
 .basket-count {
   position: absolute;
   top: 12px;
-  right: 8px;
+  right: 7px;
   display: inline-block;
   text-align: center;
   font-size: 10px;
@@ -107,7 +107,8 @@ body {
 }
 
 .basket-position {
-  position: relative;
+  position:relative;
+  margin-left: -5px;
 }
 
 .navigation-item {
@@ -115,11 +116,14 @@ body {
 }
 
 .my-svg-nav {
-  margin: 0 -2px -2px 0;
+  margin: 2px -2px -1px 2px;
+}
+.my-svg-nav:hover+.basket-count {
+  background-color: #82B3D3;
 }
 
 .my-svg-nav:hover {
-  fill: #83b3d3;
+  fill: #68a2ca;
 }
 
 .my-svg-breadcrumbs {
@@ -192,7 +196,7 @@ body {
 }
 
 .navigation-list .navigation-link {
-  padding: 20px 16px;
+  padding: 19px 16px;
 }
 
 .navigation-user {
@@ -1987,7 +1991,6 @@ body {
   line-height: 36px;
   padding-bottom: 17px;
 }
-
 
 .pagination-link :last-child {
   margin-right: 8px;
