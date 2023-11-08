@@ -79,10 +79,6 @@ body {
   margin: 0 30px 0 70px;
 }
 
-/* .svg-navigation:hover {
-  color: #756157;
-} */
-
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,8 +93,8 @@ body {
 
 .basket-count {
   position: absolute;
-  top: 12px;
-  right: 8px;
+  top: 10px;
+  right: 9px;
   display: inline-block;
   text-align: center;
   font-size: 10px;
@@ -111,7 +107,8 @@ body {
 }
 
 .basket-position {
-  position: relative;
+  position:relative;
+  margin-left: -5px;
 }
 
 .navigation-item {
@@ -119,24 +116,31 @@ body {
 }
 
 .my-svg-nav {
-  margin: 0 -2px -2px 0;
-  /* margin-bottom: -2px;
-  margin-right: -7px; */
+  margin: 2px -2px -1px 2px;
+}
+/* !!!!!!навед. на оба элемента */
+
+.basket-count:hover {
+  background-color: #68a2ca;
 }
 
+/* .basket-position.basket-count:hover {
+  background-color: #68A2CA;
+} */
+
 .my-svg-nav:hover {
-  fill: #83b3d3;
+  fill: #68a2ca;
 }
 
 .my-svg-breadcrumbs {
   fill: #FFFFFF;
 }
 .my-svg-breadcrumbs:hover {
-  fill: #FFFFFF4D;
+  fill: rgba(255, 255, 255, 0.302);
 }
 
 .my-svg-breadcrumbs:focus {
-  fill: #FFFFFF4D;
+  fill: rgba(255, 255, 255, 0.302);
 }
 
 .navigation-image:hover {
@@ -179,11 +183,6 @@ body {
   background-color: #756157;
 }
 
-.disabled {
-  color: #FFFFFF;
-  background-color: #E5E5E5;
-}
-
 .navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +197,7 @@ body {
 }
 
 .navigation-list .navigation-link {
-  padding: 20px 16px;
+  padding: 19px 16px;
 }
 
 .navigation-user {
@@ -256,7 +255,7 @@ body {
 
 .navigation-link-current::before {
   position: absolute;
-  top: 63px;
+  top: 62px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -265,7 +264,7 @@ body {
 
 .navigation-link-current:hover::before {
   position: absolute;
-  top: 63px;
+  top: 62px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -274,7 +273,7 @@ body {
 
 .navigation-link-about:hover::before {
   position: absolute;
-  top: 63px;
+  top: 62px;
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
@@ -367,7 +366,7 @@ body {
 .description {
   margin-top: 0;
   margin-bottom: 25px;
-  width: 620px;
+  max-width: 720px;
 }
 
 .advantage-item {
@@ -381,7 +380,7 @@ body {
 .offer {
   margin-top: 0;
   margin-bottom: 90px;
-  width: 651px;
+  width: 660px;
 }
 
 .advantage {
@@ -400,17 +399,12 @@ body {
   text-align: center;
 }
 
-/* .advantage-list li::nth-child(2):nth-child(6) {
-position: relative;
-} */
-
 .advantage-list li:not(:nth-child(2)):not(:nth-child(6)) {
   padding: 102px 85px;
   width: 230px;
 }
 
  .advantage-title {
-  position: relative;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -419,20 +413,18 @@ position: relative;
   max-width: 175px;
 }
 
-
-
-.advantage-title::after {
+.advantage-description::after {
   content: "";
   position: absolute;
   width: 60px;
   height: 2px;
-  top: 85px;
-  left: 57px;
+  top: -30px;
+  left: 84px;
   background-color: rgba(0, 0, 0, 0.302);
 }
 
-.advantage-item:first-child  .advantage-title::after,
-.advantage-item:last-child  .advantage-title::after {
+.advantage-item:first-child  .advantage-description::after,
+.advantage-item:last-child  .advantage-description::after {
   background-color: #FFFFFF;
 }
 
@@ -463,6 +455,7 @@ position: relative;
 }
 
 .advantage-description {
+  position: relative;
   margin: 0;
   min-height: 54px;
 }
@@ -492,7 +485,7 @@ position: relative;
   text-align: center;
   padding: 78px 85px;
   width: 230px;
-  background-color: #83b3d31f;
+  background-color: rgb(131 179 211 / 12%);
 }
 
 .recommendations-item-2  {
@@ -527,7 +520,7 @@ position: relative;
 .invitation-advantage {
   margin-top: 0;
   margin-bottom: 64px;
-  max-width: 490px;
+  max-width: 550px;
 }
 
 /* Newsletter */
@@ -727,7 +720,7 @@ position: relative;
 }
 
 .my-svg:active {
-  fill: hsla(204, 48%, 60%, 0.3);
+  fill: rgba(104, 163, 202, 0.3);
 }
 
 .phone-number {
@@ -817,7 +810,7 @@ position: relative;
 
 .modal {
   position: relative;
-  margin: 396px auto auto auto;
+  margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
@@ -839,6 +832,7 @@ position: relative;
   padding: 20px 19px 19px 20px;
   border: none;
   cursor: pointer;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .svg-modal-close {
@@ -912,7 +906,7 @@ position: relative;
 }
 
 .field-date {
-  background-image: url(../images/modal-icon/calendar.svg);
+  background-image: url("../images/modal-icon/calendar.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
 }
@@ -963,11 +957,7 @@ position: relative;
   border-radius: 0;
   padding: 14px 0;
   max-height: 48px;
-}
-
-.person-count {
   position: relative;
-  margin-left: 46px;
 }
 
 .person-form-count::-webkit-outer-spin-button,
@@ -1183,7 +1173,7 @@ position: relative;
 
 .tooltip-text:after {
   content:'';
-  background-image: url(../images/modal-icon/modal-triangle.svg);
+  background-image: url("../images/modal-icon/modal-triangle.svg");
   background-repeat: no-repeat;
   width: 19px;
   height: 9px;
@@ -1253,7 +1243,7 @@ position: relative;
   position: absolute;
   left: 0;
   bottom: 5px;
-  background-image: url(../images/breadcrumbs-2.svg);
+  background-image: url("../images/breadcrumbs-2.svg");
   background-repeat: no-repeat;
   width: 8px;
   height: 11px;
@@ -1280,7 +1270,7 @@ position: relative;
 
 .breadcrumbs-hotel:active,
 .button-reset:active {
-  color: #FFFFFF4D;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .control {
@@ -1376,33 +1366,16 @@ position: relative;
   border-radius: 4px;
 }
 
-/* .control-input:disabled + .control-mark {
-  border-color:red;
-} */
-
 .control:hover .control-mark,
 .control:hover .control-mark-type {
   background-color: rgba(255, 255, 255, 0.60);
 }
-
-
-/* Почему не срабаьывает фокус табом??? */
-
-/* .control:focus .control-mark,
-.control:focus .control-mark-type{
-  background-color:#060505;
-  border: 3px solid #83B3D3;
-} */
 
 .control:active .control-mark,
 .control:active .control-mark-type{
   background-color:#FFFFFF;
   outline: 3px solid #83B3D3;
 }
-
-
-/* Закугления бордера внутри чек боксов
-???????  Дергается чек бокс при сосоянии active */
 
 .control:active .control-mark::after {
   content: "";
@@ -1514,12 +1487,12 @@ position: relative;
 }
 
 .range-input {
-  width: 103px;
+  width: 80px;
   height: 24px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding:12px 20px;
+  padding: 12px 43px 12px 20px;
   color: #000000;
   background-color: #f2f2f2;
   font-family: inherit;
@@ -1645,6 +1618,10 @@ position: relative;
 }
 
 .dropdown:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1960,8 +1937,6 @@ position: relative;
   text-align: center;
   color: #ffffff;
   padding: 11px 11px 13px 11px;
-  /* padding-top: 11px;
-  padding-bottom: 13px; */
   border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
@@ -1995,6 +1970,18 @@ position: relative;
 .button.button-apply:active,
 .button-blue:active,
 .picker-form-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button.newsletter-button:disabled,
+.button.button-apply:disabled,
+.hotel-card-button:disabled,
+.button-blue:disabled,
+.picker-form-button:active,
+.navigation-link.button:disabled,
+.navigation-link.button:disabled,
+.button-reset:disabled {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.302);
 }
@@ -2012,7 +1999,6 @@ position: relative;
   line-height: 36px;
   padding-bottom: 17px;
 }
-
 
 .pagination-link :last-child {
   margin-right: 8px;
