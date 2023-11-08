@@ -45,6 +45,7 @@ body {
 }
 
 /* Pages */
+
 .main-container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -124,7 +125,7 @@ body {
 }
 
 .my-svg-nav:hover .basket-count {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .my-svg-nav:hover {
@@ -564,7 +565,7 @@ body {
   margin: 0;
   padding-top: 73px;
   padding-bottom: 104px;
-  background-color: #68a2Ca;
+  background-color: #68a2ca;
   }
 
 .newsletter-catalog {
@@ -1550,6 +1551,18 @@ body {
   font-family: inherit;
 }
 
+/* Неактивные: кнопка навигации, кнопка поиска гостиниц, кнопки карточек гостиниц */
+
+/* .button.disabled,
+.button.disabled:hover,
+.button.disabled:focus,
+.button.disabled:active {
+  color: #ffffff;
+  background-color:#e5e5e5;
+  border-radius: 4px;
+  cursor: default;
+} */
+
 .button-apply {
   color: #ffffff;
   font-size: 16px;
@@ -1969,9 +1982,21 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.disabled {
-  background-color: rgba(255, 255, 255, 0.302);
-  border: rgba(255, 255, 255, 0.302);
+/* Неактивные кнопки button после добавлением атрибута disabled */
+
+.button:disabled {
+  color: #ffffff;
+  background-color:#e5e5e5;
+  border-radius: 4px;
+}
+
+.button:disabled:hover,
+.button:disabled:focus,
+.button:disabled:active {
+  color: #ffffff;
+  background-color:#e5e5e5;
+  border-radius: 4px;
+  cursor: default;
 }
 
 .pagination-current {
