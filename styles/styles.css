@@ -118,22 +118,21 @@ body {
 .my-svg-nav {
   margin: 2px -2px -1px 2px;
 }
-/* !!!!!!навед. на оба элемента */
 
 .basket-count:hover {
   background-color: #68a2ca;
 }
 
-/* .basket-position.basket-count:hover {
+.my-svg-nav:hover .basket-count {
   background-color: #68A2CA;
-} */
+}
 
 .my-svg-nav:hover {
   fill: #68a2ca;
 }
 
 .my-svg-breadcrumbs {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 .my-svg-breadcrumbs:hover {
   fill: rgba(255, 255, 255, 0.302);
@@ -425,7 +424,7 @@ body {
 
 .advantage-item:first-child  .advantage-description::after,
 .advantage-item:last-child  .advantage-description::after {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
  .advantage-list li:first-child,
@@ -565,7 +564,7 @@ body {
   margin: 0;
   padding-top: 73px;
   padding-bottom: 104px;
-  background-color: #68A2CA;
+  background-color: #68a2Ca;
   }
 
 .newsletter-catalog {
@@ -883,8 +882,8 @@ body {
   text-transform: uppercase;
   line-height: 24px;
   text-align: center;
-  background-color: #83B3D3;
-  color: #FFFFFF;
+  background-color: #83b3d3;
+  color: #ffffff;
   width: 577px;
   height: 60px;
   border: none;
@@ -898,7 +897,7 @@ body {
   height: 24px;
   border: none;
   border-radius: 4px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 18px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -931,7 +930,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #FF5757;
+  color: #ff5757;
   font-size: 16px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -952,7 +951,7 @@ body {
   line-height: 20px;
   text-align: center;
   width: 31px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: 1px solid transparent;
   border-radius: 0;
   padding: 14px 0;
@@ -1265,7 +1264,7 @@ body {
 
 .breadcrumbs-hotel:focus,
 .button-reset:focus {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs-hotel:active,
@@ -1283,13 +1282,13 @@ body {
   width: 20px;
   height: 19px;
   margin-right: 16px;
-  background-color: #FFFFFF;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
 .control-input:hover {
-  background-color: #FFFFFF;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
 .catalog-filter {
@@ -1373,8 +1372,8 @@ body {
 
 .control:active .control-mark,
 .control:active .control-mark-type{
-  background-color:#FFFFFF;
-  outline: 3px solid #83B3D3;
+  background-color:#ffffff;
+  outline: 3px solid #83b3d3;
 }
 
 .control:active .control-mark::after {
@@ -1429,7 +1428,7 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .range-toggle,
@@ -1437,18 +1436,18 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 6px;
   border: none;
   cursor: pointer;
 }
 
 .range-toggle:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .range-toggle:active {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
 }
 
 .toggle-min {
@@ -1614,14 +1613,10 @@ body {
 
 .dropdown:hover,
 .dropdown:focus {
-  border-color: #68A2CA;
+  border-color: #68a2Ca;
 }
 
 .dropdown:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.dropdown:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1640,7 +1635,7 @@ body {
           align-items: center;
   margin: 0;
   margin-left: 8px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
@@ -1649,7 +1644,7 @@ body {
 }
 
 .button-light:focus {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
 }
 
 .button-light:active {
@@ -1954,7 +1949,7 @@ body {
  .button.button-apply:hover,
  .button-blue:hover,
  .picker-form-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:focus,
@@ -1962,7 +1957,7 @@ body {
 .button.button-apply:focus,
 .button-blue:focus,
 .picker-form-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active,
@@ -1974,16 +1969,9 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.button.newsletter-button:disabled,
-.button.button-apply:disabled,
-.hotel-card-button:disabled,
-.button-blue:disabled,
-.picker-form-button:active,
-.navigation-link.button:disabled,
-.navigation-link.button:disabled,
-.button-reset:disabled {
-  background-color: #82B3D3;
-  color: rgba(255, 255, 255, 0.302);
+.disabled {
+  background-color: rgba(255, 255, 255, 0.302);
+  border: rgba(255, 255, 255, 0.302);
 }
 
 .pagination-current {
@@ -1992,7 +1980,7 @@ body {
 }
 
 .pagination-between {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
   font-size: 22px;
   font-weight: 400;
