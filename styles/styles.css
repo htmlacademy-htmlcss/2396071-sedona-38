@@ -1867,6 +1867,16 @@ body {
   margin-right: 0;
 }
 
+.button-green:hover,
+.button-green:focus {
+  background-color: #6c9e42;
+}
+
+.button-green:active {
+  background-color: #7dB54f;
+  color: rgba(255, 255, 255, 0.302);
+}
+
 .rating {
   grid-column: 1 / -1;
   -ms-grid-row: 5;
@@ -1985,6 +1995,7 @@ body {
 .button-blue:focus,
 .picker-form-button:focus {
   background-color: #68a2ca;
+  color: #ffffff;
 }
 
 .pagination-link:active,
@@ -1992,8 +2003,8 @@ body {
 .button.button-apply:active,
 .button-blue:active,
 .picker-form-button:active {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.302);
 }
 
 /* Неактивные кнопки button после добавлением атрибута disabled */
@@ -2029,4 +2040,15 @@ body {
 
 .pagination-link :last-child {
   margin-right: 8px;
+}
+
+.pagination-between:hover,
+.pagination-between:focus {
+  background-color: transparent;
+  color: #000000;
+}
+
+.pagination-current:focus {
+  background-color: #f2f2f2;
+  color: #000000;
 }
