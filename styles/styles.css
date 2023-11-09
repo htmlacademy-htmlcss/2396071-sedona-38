@@ -128,8 +128,16 @@ body {
   background-color: #68a2ca;
 }
 
+.my-svg-nav:focus .basket-count {
+  background-color: #7db54f;
+}
+
 .my-svg-nav:hover {
   fill: #68a2ca;
+}
+
+.my-svg-nav:focus {
+  fill: #7db54f;
 }
 
 .my-svg-breadcrumbs {
@@ -269,6 +277,11 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
+}
+
+.navigation-link-current:focus,
+.navigation-link-about:focus {
+  color: #7db54f;
 }
 
 .navigation-link-about:hover::before {
